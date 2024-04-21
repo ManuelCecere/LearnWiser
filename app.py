@@ -68,6 +68,39 @@ def local_css(file_name):
 
 
 # apply_custom_css()
+def apply_simple_css():
+    st.markdown(
+        """
+        <style>
+        /* MAIN STUFF */
+        .main { background: #120c59 url("back.png") no-repeat fixed center !important; }
+        st-emotion-cache-10trblm e1nzilvr1, .st-emotion-cache-1629p8f a , h1,.st-emotion-cache-ue6h4q,p{
+            color: white !Important;
+        }
+        
+        /* SIDEBAR */
+        .st-emotion-cache-6qob1r, .eczjsme3 {
+            background-color: #B36DFF !Important;
+        }
+        
+        /* BUTTON */
+        .st-emotion-cache-7ym5gk, .ef3psqc12 {
+            color: white !Important;
+            background-color: #C5EF07 !Important;  
+            border: 2px #C5EF07;
+        }
+        
+        .st-emotion-cache-1629p8f span {
+            color:white !Important;
+        }
+        
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
+
+
+apply_simple_css()
 
 
 def escape_markdown(text):
