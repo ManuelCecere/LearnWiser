@@ -11,7 +11,6 @@ import streamlit as st
 st.set_page_config(
     page_title="LearnWiser",
     layout="centered",
-    initial_sidebar_state="collapsed",
     page_icon=":school:",
     initial_sidebar_state="expanded",
 )
